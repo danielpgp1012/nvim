@@ -48,4 +48,7 @@ return require('packer').startup(function(use)
   }
   use('duane9/nvim-rg')
   use 'm4xshen/autoclose.nvim'
+  use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+      require("toggleterm").setup()
+  end}
 end)
